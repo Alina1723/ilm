@@ -1,0 +1,60 @@
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+
+.container {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 17px;
+  background: white;
+}
+
+.city-input {
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ebfafb;
+  color: rgb(146, 146, 146);
+}
+
+.submit-button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fbeffa;
+  color: rgb(146, 146, 146);
+}
+.current-city-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temp-info strong {
+  color: #ed9be6;
+  font-weight: 500;
+}
+
+.current-city-temperature {
+  display: flex;
+}
+
+.days {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 30px;
+}

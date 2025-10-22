@@ -3,36 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>⛱Weather</title>
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Enter the city" />
-      <input type="button" value="Search" />
-    </form>
-    <hr />
-    <h1>Talinn</h1>
-    <p>
-      Monday 12:00, broken clouds <br />
-      Humidity: <strong>88%</strong>, Wind: <strong>3.69km/h</strong>
-    </p>
-    <div>⛅17°C</div>
-    <ul>
-      <li>Mon ⛅</li>
-      <li>Tue ⛈</li>
-      <li>Wed 🌤</li>
-      <li>Thu 🌥</li>
-      <li>Fri ☀</li>
-      <li>Sat 🌨</li>
-    </ul>
-    <hr />
-    <footer>
-      Built by
-      <a href="https://github.com/Alina1723/ilm" target="_blank">Alina</a>, code
-      hosted on
-      <a href="https://github.com/Alina1723" target="_blank">GidHub</a> and
-      website hosted on
-      <a href="https://ilm-forecast.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <div class="container">
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the city"
+          class="city-input"
+          required
+        />
+        <input type="button" value="Search" class="submit-button" />
+      </form>
+      <br />
+      <div class="current-city-data">
+        <h1>Talinn</h1>
+        <p class="temp-info">
+          Monday 12:00, broken clouds <br />
+          Humidity: <strong>88%</strong>, Wind: <strong>3.69km/h</strong>
+        </p>
+        <div class="current-city-temperature">
+          <div class="current-city-temperature-icon">⛅</div>
+          <div class="current-city-temperature-temp">17</div>
+          <div class="current-city-temperature-unit">°C</div>
+        </div>
+      </div>
+      <ul class="days">
+        <li>
+          Mon
+          <div>⛅</div>
+        </li>
+        <li>
+          Tue
+          <div>⛈</div>
+        </li>
+        <li>
+          Wed
+          <div>🌤</div>
+        </li>
+        <li>
+          Thu
+          <div>🌥</div>
+        </li>
+        <li>
+          Fri
+          <div>☀</div>
+        </li>
+        <li>
+          Sat
+          <div>🌨</div>
+        </li>
+      </ul>
+      <hr />
+      <footer>
+        Built by
+        <a href="https://github.com/Alina1723/ilm" target="_blank">Alina</a>,
+        code hosted on
+        <a href="https://github.com/Alina1723" target="_blank">GidHub</a> and
+        website hosted on
+        <a href="https://ilm-forecast.netlify.app/" target="_blank">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
