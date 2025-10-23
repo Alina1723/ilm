@@ -10,6 +10,7 @@ body {
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
   );
+  background-size: cover;
 }
 
 .container {
@@ -18,11 +19,15 @@ body {
   padding: 20px;
   border-radius: 17px;
   background: white;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
+form {
+  padding: 7px 0px;
+}
 .city-input {
-  width: 75%;
-  padding: 10px;
+  width: 70%;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   background-color: #ebfafb;
@@ -31,7 +36,7 @@ body {
 
 .submit-button {
   width: 20%;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   background-color: #fbeffa;
@@ -50,6 +55,31 @@ body {
 .current-city-temperature {
   display: flex;
 }
+.current-city-data h1 {
+  font-size: 45px;
+  position: relative;
+  top: -35px;
+}
+.temp-info {
+  position: relative;
+  top: 35px;
+  left: -160px;
+}
+
+.current-city-temperature-icon {
+  font-size: 37px;
+  position: relative;
+  top: 15px;
+}
+.current-city-temperature-temp {
+  font-size: 60px;
+  font-weight: 400;
+}
+.current-city-temperature-unit {
+  font-size: 23px;
+  position: relative;
+  top: 3px;
+}
 
 .days {
   list-style: none;
@@ -57,4 +87,13 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding-right: 30px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: rgb(237, 155, 230, 0.3) solid 1px;
+}
+footer a {
+  color: #ed9be6;
 }
