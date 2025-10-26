@@ -29,11 +29,12 @@
       <div class="current-city-data">
         <h1 id="updated-city">Talinn</h1>
         <p class="temp-info">
-          Monday 12:00, broken clouds <br />
-          Humidity: <strong>88%</strong>, Wind: <strong>3.69km/h</strong>
+          <span id="time"></span>, <span id="conditions"></span><br />
+          Humidity: <strong id="humidity">88%</strong>, Wind:
+          <strong><span id="wind-speed">3.69</span>km/h</strong>
         </p>
         <div class="current-city-temperature">
-          <div class="current-city-temperature-icon">⛅</div>
+          <div class="current-city-temperature-icon" id="weather-icon">⛅</div>
           <div
             class="current-city-temperature-temp"
             id="current-city-temperature-temp"
