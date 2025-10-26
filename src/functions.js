@@ -1,4 +1,5 @@
 function updateTemperature(response) {
+  let city = document.querySelector("#updated-city");
   let searchedCityTemperature = document.querySelector(
     "#current-city-temperature-temp"
   );
@@ -8,6 +9,8 @@ function updateTemperature(response) {
   let currentTime = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let icon = document.querySelector("#weather-icon");
+
+  city.innerHTML = response.data.city;
   icon.innerHTML = `<img
               src="${response.data.condition.icon_url}"
               class="current-city-temperature-icon" />`;
@@ -53,7 +56,6 @@ function changeCityName(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
   let updatedCity = document.querySelector("#updated-city");
-  updatedCity.innerHTML = cityInput.value;
 
   searchCity(cityInput.value);
 }

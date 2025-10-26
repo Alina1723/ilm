@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 70px auto;
   padding: 20px;
   border-radius: 17px;
@@ -41,10 +41,26 @@ form {
   border-radius: 5px;
   background-color: #fbeffa;
   color: rgb(146, 146, 146);
+  transition: all 230ms ease-in-out;
 }
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #fbe6f9;
+  color: #363636;
+  box-shadow: 1px 2px 4px rgba(65, 50, 100, 0.3);
+}
+
 .current-city-data {
   display: flex;
   justify-content: space-between;
+}
+
+.current-city-data h1 {
+  font-size: 45px;
+  margin: 0;
+  padding-top: 12px;
+  line-height: 35px;
 }
 
 .temp-info strong {
@@ -55,16 +71,6 @@ form {
 .current-city-temperature {
   display: flex;
 }
-.current-city-data h1 {
-  font-size: 45px;
-  position: relative;
-  top: -35px;
-}
-.temp-info {
-  position: relative;
-  top: 35px;
-  left: -160px;
-}
 
 .current-city-temperature-icon {
   height: 70px;
@@ -72,8 +78,9 @@ form {
 .current-city-temperature-temp {
   font-size: 60px;
   font-weight: 400;
-  line-height: 63px;
+  line-height: 68px;
 }
+
 .current-city-temperature-unit {
   font-size: 23px;
   position: relative;
