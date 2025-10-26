@@ -7,6 +7,10 @@ function updateTemperature(response) {
   let searchedCityWind = document.querySelector("#wind-speed");
   let currentTime = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#weather-icon");
+  icon.innerHTML = `<img
+              src="${response.data.condition.icon_url}"
+              class="current-city-temperature-icon" />`;
 
   currentTime.innerHTML = formatDate(date);
   searchedCityTemperature.innerHTML = Math.round(

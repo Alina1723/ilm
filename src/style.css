@@ -67,13 +67,12 @@ form {
 }
 
 .current-city-temperature-icon {
-  font-size: 37px;
-  position: relative;
-  top: 15px;
+  height: 70px;
 }
 .current-city-temperature-temp {
   font-size: 60px;
   font-weight: 400;
+  line-height: 63px;
 }
 .current-city-temperature-unit {
   font-size: 23px;
