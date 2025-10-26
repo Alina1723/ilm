@@ -61,4 +61,4 @@ function changeCityName(event) {
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", changeCityName);
+searchFormElement.addEventListener("click", changeCityName);
