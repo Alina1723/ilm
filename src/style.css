@@ -87,12 +87,36 @@ form {
   top: 3px;
 }
 
-.days {
-  list-style: none;
+.weather-forecast {
+  margin-top: 13px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  padding-right: 30px;
+}
+
+.forecast-date {
+  text-align: center;
+}
+
+.forecast-icon {
+  text-align: center;
+  font-size: 32px;
+}
+
+.forecast-temp {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-temperature {
+  padding: 0 6px;
+}
+
+.forecast-temperature strong {
+  color: #ed9be6;
+  font-weight: 600;
 }
 
 footer {
