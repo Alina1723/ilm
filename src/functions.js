@@ -23,7 +23,7 @@ function updateTemperature(response) {
   searchedCityHumidity.innerHTML = response.data.temperature.humidity;
   searchedCityWind.innerHTML = response.data.wind.speed;
 
-  console.log(response.data);
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -60,7 +60,13 @@ function changeCityName(event) {
   searchCity(cityInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "de2o6a7354a9ebbc12abf998t40de9e9";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let forecast = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -84,4 +90,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("click", changeCityName);
 
 searchCity("Narva");
-displayForecast();
