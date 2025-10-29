@@ -60,5 +60,28 @@ function changeCityName(event) {
   searchCity(cityInput.value);
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+          <div class="forecast-date">${day}</div>
+          <div class="forecast-icon">☀</div>
+          <div class="forecast-temp">
+            <div class="forecast-temperature"><strong>18°C</strong></div>
+            <div class="forecast-temperature">9°C</div>
+          </div>
+        </div>`;
+  });
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("click", changeCityName);
+
+searchCity("Narva");
+displayForecast();
